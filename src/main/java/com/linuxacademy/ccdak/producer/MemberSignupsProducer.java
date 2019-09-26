@@ -20,6 +20,10 @@ public class MemberSignupsProducer {
         props.put("key.serializer", "org.apache.kafka.common.serialization.IntegerSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         
+        props.put("acks", "all");
+        props.put("max.in.flight.requests.per.connection", "1");
+        props.put("batch.size", "65536");
+        
         producer = new KafkaProducer<>(props);
     }
     
