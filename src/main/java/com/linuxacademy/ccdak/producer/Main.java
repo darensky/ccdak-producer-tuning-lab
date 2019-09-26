@@ -10,6 +10,7 @@ public class Main {
         producer.handleMemberSignup(4, "Giles, Rupert");
         producer.handleMemberSignup(5, "Harris, Alexander");
         producer.handleMemberSignup(6, "Chase, Cordelia");
+        producer.tearDown();
     }
 
 }
